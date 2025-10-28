@@ -1,32 +1,31 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+int main(){
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    //Variaveis das peças:
+    int torre = 1, bispo = 1, rainha = 1;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    //Movimmento da Torre com while:
+        printf("Movimento da Torre:\n");
+    while (torre <= 6 ){
+        printf("Cima\n");
+        torre ++;
+    }
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    //Movimento do Bispo com do-while:
+        printf("Movimento do Bispo:\n");
+    do
+    {
+        printf("Cima direita\n");
+        bispo ++;
+    } while (bispo <= 5);
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
-
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
-
-    return 0;
+    //Movimento Rainha com for:
+    printf("Movimento da Rainha:\n");
+    for (rainha = 1; rainha <= 8; rainha++)
+    {
+        printf("Esquerda\n");
+    }
+        
+return 0;
 }
